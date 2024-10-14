@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # You can change this to the branch you use for deployments.
+      - main  # This triggers deployment on changes to the main branch.
 
 jobs:
   build-and-deploy:
@@ -14,24 +14,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js if you're using a framework (React, Angular, etc.)
-      # This step can be skipped if you're not using JavaScript frameworks
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-
-      # Step 3: Install dependencies and build the project
-      # You can skip these steps if you only have static HTML/CSS/JS without any build process.
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Build Project
-        run: npm run build
-
-      # Step 4: Deploy to GitHub Pages
+      # Step 2: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Update this path if necessary (e.g., `./dist` for Vue or `.` for plain static files)
+          publish_dir: .  # Since you are using static files, just publish the root directory
