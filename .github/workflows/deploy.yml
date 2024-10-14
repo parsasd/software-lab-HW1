@@ -3,7 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # This triggers deployment on changes to the main branch.
+      - main  # Trigger the deployment whenever you push to the main branch.
+
+permissions:
+  contents: write  # Ensure the workflow has permission to push changes
 
 jobs:
   build-and-deploy:
@@ -19,4 +22,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  # Since you are using static files, just publish the root directory
+          publish_dir: .  # Use the root directory for publishing
+          # Optional: add `cname` if you have a custom domain name
