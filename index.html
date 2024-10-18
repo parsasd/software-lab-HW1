@@ -2,58 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <meta name="description" content="Online Calculator">
+    <meta name="keywords" content="sharif university,Calculator,HTML, CSS, JavaScript">
+    <meta name="author" content="Amirreza Qhasemi, Hesam Asnaashari">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Frontend Project</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+            integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+            integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <div class="container">
-            <h1>My Static Site</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+<table id="calcu">
+    <tr>
+        <td colspan="3"><input type="text" id="result"></td>
+        <td><input type="button" value="c" /> </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" > </td>
+        <td><input type="button" value="2"> </td>
+        <td><input type="button" value="3" > </td>
+        <td><input type="button" value="/" > </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="4" > </td>
+        <td><input type="button" value="5"> </td>
+        <td><input type="button" value="6" > </td>
+        <td><input type="button" value="*" > </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="7" > </td>
+        <td><input type="button" value="8" > </td>
+        <td><input type="button" value="9" > </td>
+        <td><input type="button" value="-" > </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="0" > </td>
+        <td><input type="button" value="." > </td>
+        <td><input type="button" value="="> </td>
+        <td><input type="button" value="+"> </td>
+    </tr>
+</table>
 
-<main>
-    <section id="home" class="hero-section">
-        <div class="container">
-            <h2>Welcome to My Website</h2>
-            <p>This is a simple static front-end example created for my software lab assignment.</p>
-        </div>
-    </section>
-
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About</h2>
-            <p>This project is built with HTML, CSS, and JavaScript. It's designed as part of a Git project for software lab coursework.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-</main>
-
-<script src="js/script.js"></script>
 </body>
 </html>
