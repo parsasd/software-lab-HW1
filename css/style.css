@@ -10,3 +10,31 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+/* Navbar styling */
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
