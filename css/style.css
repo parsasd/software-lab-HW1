@@ -38,3 +38,14 @@ body {
     color: #fff;
     text-decoration: none;
 }
+/* Hero Section Styling */
+.hero-section {
+    background: #333;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    margin-bottom: 10px;
+}
