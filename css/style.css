@@ -6,3 +6,19 @@ table {
     padding: 10px;
     background-color: black;
 }
+input[type="button"] {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: green;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    border: dashed 3px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for button */
+:hover[type="button"]{
+    background-color: aqua;
+}
