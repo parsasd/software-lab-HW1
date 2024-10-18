@@ -22,3 +22,11 @@ input[type="button"] {
 :hover[type="button"]{
     background-color: aqua;
 }
+input[type="text"] {
+    padding: 20px 30px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid black;
+}
