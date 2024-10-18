@@ -10,7 +10,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-
 /* Navbar styling */
 .navbar {
     background: #333;
@@ -39,7 +38,6 @@ body {
     color: #fff;
     text-decoration: none;
 }
-
 /* Hero Section Styling */
 .hero-section {
     background: #333;
@@ -51,7 +49,6 @@ body {
 .hero-section h2 {
     margin-bottom: 10px;
 }
-
 /* About Section Styling */
 .about-section, .contact-section {
     padding: 40px 20px;
